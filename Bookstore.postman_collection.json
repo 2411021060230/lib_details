@@ -1,0 +1,76 @@
+{
+  "info": {
+    "name": "Short Bookstore Lab",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/books",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Learning MongoDB\",\n  \"author\": \"Student\",\n  \"isbn\": \"9781234567890\",\n  \"price\": 450,\n  \"stock\": 10,\n  \"genre\": [\n    \"Technology\"\n  ],\n  \"publishedYear\": 2024\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Read all",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/books",
+        "header": []
+      }
+    },
+    {
+      "name": "Read one",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/books/9781234567890",
+        "header": []
+      }
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "url": "http://localhost:3000/api/books/9781234567890",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 500,\n  \"stock\": 20\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:3000/api/books/9781234567890",
+        "header": []
+      }
+    }
+  ]
+}

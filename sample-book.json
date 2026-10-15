@@ -1,0 +1,11 @@
+{
+  "title": "Learning MongoDB",
+  "author": "Student",
+  "isbn": "9781234567890",
+  "price": 450,
+  "stock": 10,
+  "genre": [
+    "Technology"
+  ],
+  "publishedYear": 2024
+}
